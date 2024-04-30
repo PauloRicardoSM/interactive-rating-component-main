@@ -1,0 +1,96 @@
+@media (min-width: 550px) {
+    h1 {
+        font-size: 1.8em;
+        margin-top: 5%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #interface {
+        width: 80%;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    .attribution {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+    header img {
+        width: 10%;
+    }
+
+    #interface {
+        width: 50%;
+    }
+
+    .card {
+        border-radius: 30px;
+    }
+
+    .attribution {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: white
+    }
+
+    #submit:hover {
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+    }
+
+    #interface {
+        width: 30%;
+    }
+
+    .attribution {
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width: 1440px) {
+
+
+    .attribution {
+        font-size: 0.8em;
+    }
+}

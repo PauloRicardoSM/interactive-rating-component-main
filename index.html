@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <title>Interactive Rating Component</title>
+</head>
+
+<body>
+  <div id="interface">
+
+    <div class="card" id="ratingCard">
+      <!-- Rating state start -->
+      <header>
+        <img class="radiusBackground" src="./src/images/icon-star.svg" alt="Estrela">
+
+        <h1>How did we do?</h1>
+      </header>
+
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+      <div id="buttons">
+        <button class="buttonRate" onclick="rate(1); changeColor(this, 1)">1</button>
+        <button class="buttonRate" onclick="rate(2); changeColor(this, 2)">2</button>
+        <button class="buttonRate" onclick="rate(3); changeColor(this, 3)">3</button>
+        <button class="buttonRate" onclick="rate(4); changeColor(this, 4)">4</button>
+        <button class="buttonRate" onclick="rate(5); changeColor(this, 5)">5</button>
+      </div>
+
+      <button id="submit" onclick="submit()">Submit</button>
+
+      <!-- Rating state end -->
+    </div>
+
+    <div class="card" id="thankYouCard" style="display: none;">
+      <!-- Thank you state start -->
+      <div id="headerThank">
+        <img src="./src/images/illustration-thank-you.svg" alt="Thank You">
+
+        <div id="userRateText">
+          <p>You selected <span id="rating"></span> out of 5</p>
+        </div>
+      </div>
+
+      <h1>Thank you!</h1>
+
+      <p id="thankText">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+      <!-- Thank you state end -->
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/PauloRicardoSM">Paulo Ricardo</a>.
+    </div>
+
+    <script src="./src/js/index.js" defer></script>
+  </div>
+</body>
+
+</html>
